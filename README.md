@@ -184,21 +184,21 @@ RPNToInfix() function:
 
 Below are the function return error codes and descriptions:
 
- SUCCESS :                    Successful conversion from Infix to RPN and vice-versa
- FAILURE :                    Unsuccessful result (will be one of the below cases)
- ERROR_MISMATCHED_BRACES :    When start or end parentheses are missing or are not 
+ -SUCCESS :                    Successful conversion from Infix to RPN and vice-versa
+ -FAILURE :                    Unsuccessful result (will be one of the below cases)
+ -ERROR_MISMATCHED_BRACES :    When start or end parentheses are missing or are not 
                               matched properly
- ERROR_INVALID_INPUT_EXPR :   (a) When the corresponding input expression is invalid Infix 
+ -ERROR_INVALID_INPUT_EXPR :   (a) When the corresponding input expression is invalid Infix 
                               or RPN notation 
                               (b) If there are incorrect number of operators or operands 
                               (Valid expressions will always have one less number of 
                               operators than the operands) 
- ERROR_UNDEFINED_CHARACTER :  When the input expression consists of uppercase, numbers,     
+ -ERROR_UNDEFINED_CHARACTER :  When the input expression consists of uppercase, numbers,     
                               white spaces or any other characters except valid operators 
                               and parentheses
- ERROR_INPUT_OUT_OF_BOUNDS :  When the input string exceeds maximum limit of 1024 or
+ -ERROR_INPUT_OUT_OF_BOUNDS :  When the input string exceeds maximum limit of 1024 or
                               if the input string is empty
- ERROR_RPN_STORAGE_STACK_FULL:When the RPN output storage buffer exceeds Maximum of 
+ -ERROR_RPN_STORAGE_STACK_FULL:When the RPN output storage buffer exceeds Maximum of 
                               1024 bytes
 
 Development Environment
